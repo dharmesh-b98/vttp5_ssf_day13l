@@ -13,7 +13,7 @@
     <body>
     
         <h1 class="text-center">Registration Page</h1>
-        <form method="POST" data-th-action="@{/person/create}" data-th-object="${person}"> <!--action has to have the full path-->>
+        <form method="POST" data-th-action="@{/create}" data-th-object="${person}"> <!--action has to have the full path-->
             <!--firstName-->
             <label for = "firstName", class = "form-label"> First Name: </label>
             <input id="firstName" name = "firstName" data-th-field = *{firstName}

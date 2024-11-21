@@ -11,7 +11,7 @@
     </head>
     <body>
 
-        <a class="btn btn-primary" data-th-href="@{/person/create}">Create</a>
+        <a class="btn btn-primary" data-th-href="@{/create}">Create</a>
 
         <table class = "table table-bordered table-striped table-sm">
             <thead class = "thead-dark">
@@ -34,11 +34,11 @@
                     <td data-th-text = "${person.lastName}"></td>
                     <td data-th-text = "${person.email}"></td>
                     <td data-th-text = "${person.salary}"></td>
-                    <td data-th-text = "${#dates.format(person.dateOfBirth, 'dd-MM-yyyy')}"></td> <!--date formatting in thymeleaf-->>
+                    <td data-th-text = "${#dates.format(person.dateOfBirth, 'dd-MM-yyyy')}"></td> <!--date formatting in thymeleaf-->
                     <td data-th-text = "${person.telephone}"></td>
                     <td data-th-text = "${person.postalcode}"></td>
-                    <td><a class="btn btn-success" data-th-href="@{/person/update/{person-id}(person-id = ${person.id})}">Update</a></td>
-                    <td><a class="btn btn-danger" data-th-href="@{/person/delete/{person-id}(person-id = ${person.id})}">Delete</a></td>
+                    <td><a class="btn btn-success" data-th-href="@{/update/{person-id}(person-id = ${person.id})}">Update</a></td>
+                    <td><a class="btn btn-danger" data-th-href="@{/delete/{person-id}(person-id = ${person.id})}">Delete</a></td>
                 </tr>
             </tbody>
 

@@ -54,18 +54,4 @@ public class PersonRepo {
         return true;
 
     }
-
-
-    /* public Boolean update (Person person) {
-        List<Person> filteredPerson = personList.stream().filter(p -> p.getId().equals(person.getId())).collect(Collectors.toList());
-
-        if (filteredPerson.size() > 0){
-            personList.remove(filteredPerson.getFirst());
-            personList.add(person);
-            return true;
-        } 
-        return false;
-    } */
-
-
 }

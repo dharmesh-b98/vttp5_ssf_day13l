@@ -13,10 +13,14 @@
     <body>
     
         <h1 class="text-center">Updating Page</h1>
-        <form method="POST" data-th-action="@{/person/update}" data-th-object="${person}"> <!--action has to have the full path-->>
-                
+        <form method="POST" data-th-action="@{/update}" data-th-object="${person}"> <!--action has to have the full path-->
             
-            
+            <!--id-->
+            <label for = "id", class = "form-label"> Id: </label>
+            <input id="id" name = "id" data-th-field = *{id}
+            type = "text"
+            class = "form-control"
+            readonly> <!--name is for key value pair, field is to link to person object-->
             
             <!--firstName-->
             <label for = "firstName", class = "form-label"> First Name: </label>
