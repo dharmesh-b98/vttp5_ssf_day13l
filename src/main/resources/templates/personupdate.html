@@ -16,9 +16,9 @@
         <form method="POST" data-th-action="@{/update}" data-th-object="${person}"> <!--action has to have the full path-->
             
             <!--id-->
-            <label for = "id", class = "form-label"> Id: </label>
+            <label for = "id", class = "form-label"--></label>
             <input id="id" name = "id" data-th-field = *{id}
-            type = "text"
+            type = "hidden"
             class = "form-control"
             readonly> <!--name is for key value pair, field is to link to person object-->
             
@@ -30,7 +30,8 @@
 
             <p data-th-if = "${#fields.hasErrors('firstName')}"
                 data-th-errors = "*{firstName}"
-                data-th-errorclass = "error"></p> <!--error class is css stuff, can remove-->
+                data-th-errorclass = "error"
+                class = "text-danger"></p> <!--error class is css stuff, can remove-->
 
 
             <!--lastName-->
@@ -74,7 +75,8 @@
 
             <p data-th-if = "${#fields.hasErrors('dateOfBirth')}"
                 data-th-errors = "*{dateOfBirth}"
-                data-th-errorclass = "error"></p> <!--error class is css stuff, can remove-->
+                data-th-errorclass = "error"
+                class = "text-danger"></p> <!--error class is css stuff, can remove-->
 
 
             <!--telephone-->

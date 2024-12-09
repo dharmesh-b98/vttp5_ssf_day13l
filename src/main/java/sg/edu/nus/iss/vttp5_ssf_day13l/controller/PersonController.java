@@ -74,31 +74,4 @@ public class PersonController {
         return "redirect:/";
     }
 
-
-
-
-
-    /*
-    
-
-    }
-
-    @GetMapping(path = "/update/{person-id}")
-    public String updateForm(@PathVariable("person-id") String personId, Model model) {
-        Person p = personservice.findById(personId);
-        model.addAttribute("person", p);
-        return "personupdate";
-    }
-
-    @PostMapping("/update")
-    public String postUpdateForm(@Valid @ModelAttribute("person") Person person, BindingResult result, Model model) {
-
-        if (result.hasErrors())
-            return "personupdate";
-        
-        personservice.update(person);
-
-        return "redirect:/person";
-    } */
-
 }
